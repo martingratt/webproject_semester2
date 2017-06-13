@@ -49,11 +49,36 @@ INSERT INTO Groups (groupname)
 	, ('MKM');
 
 INSERT INTO User (nickname, entrydate, password, groupid)
-	VALUES ('robinho', "2017-06-13", 'keine Ahnung', 1);
+	VALUES
+    ('robinho', "2017-06-13", 'keine Ahnung', 1)
+    , ('marinho', "2016-05-16", 'password', 1)
+    , ('johinho', "2017-03-18", 'bambus', 2);
+    
+INSERT INTO Scores(userid, score)
+	VALUES 
+	(1, 1100),
+    (2, 4500),
+    (3, 2390),
+    (3, 1234),
+    (2, 5642),
+    (1, 4234);
+    
+INSERT INTO Difficulty(difficultyname)
+	VALUES
+    ('sehr einfach')
+    , ('einfach')
+    , ('mittel')
+    , ('schwer')
+    , ('sehr schwer');
 
-Select * From hangman.user;
-
-
+INSERT INTO Words (wordname, difficultyid)
+	VALUES
+    ('Affe', 1)
+    , ('Hund', 1)
+    , ('Stirnlappenbasilisk', 5)
+    , ('Bier', 2)
+    , ('Frankreich', 3)
+    , ('Donaudampfschiffahrt', 4);
 
 
 
