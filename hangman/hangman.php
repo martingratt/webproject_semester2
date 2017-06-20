@@ -12,7 +12,8 @@ if (isset($_SESSION["name"])) {
     <body>
     <h1>Hallo <?php echo $_SESSION["name"];?> </h1>
     <a href="logout.php">Ausloggen</a>
-
+    <br></br>
+    <a href="RankedList.php">Rangliste</a>
     </body>
 
     </html>
