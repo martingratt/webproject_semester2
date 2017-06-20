@@ -1,7 +1,6 @@
 <?php
 	session_start();
-    require_once('dbconfig/config.php');
-    //das könne noch auf db_newconnection geändert werden und die abfrage umgebaut werden
+    require_once('dbconfig/config.php'); //require lassen und umbauen!
 
 ?>
 
@@ -29,7 +28,7 @@
 		<?php
 			if(isset($_POST['login']))
 			{
-				$username=$_POST['nickname'];
+				$username=mysqli_escape_string($con, $_POST['nickname']); //für andere wiederhohlen
 				//$password=$_POST['password'];
 				$password = ($_POST['password']);
 
@@ -45,12 +44,12 @@
 					{
 					$row = mysqli_fetch_array($query_run,MYSQLI_ASSOC);
 					
-					$_SESSION['username'] = $username;
+					$_SESSION['name'] = $username;
 					//$_SESSION['password'] = $password; muss ich doch nicht an die session übergeben oder?
 
 					
 					header( "Location: hangman.php");
-                        $_SESSION["name"] = $username;
+
 					}
 					else
 					{
@@ -65,7 +64,10 @@
 			else
 			{
 			}
+			mysqli_close($con);
+
 		?>
+
 		
 
 </body>
