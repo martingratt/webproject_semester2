@@ -20,6 +20,7 @@ if (isset($_SESSION["name"])) {
     <?php
 } else {
     ?>
+    /*direkte weiterleitung mit header wie in index.php*/
     Bitte erste einloggen, <a href="index.php">hier</a>.
     <?php
 }

@@ -31,6 +31,7 @@
 
                         }
                         if ($control != 0) {
+                            $errorUserNameExists = true;
                             echo "<p>Username <strong>$nickname</strong> existiert bereits! Versuchen sie einen andern... <a href='register.php'>zurück</a> </p>";
 
                         } else {
