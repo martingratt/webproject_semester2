@@ -6,14 +6,19 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<head><link rel="stylesheet" href="css/bootstrap.css">
+
 <title>Login Page</title>
 
 </head>
+<body>
+<div class="container-fluid">
+    <div class="text-center"><h1>HANGMAN WARS</h1></div>
 
+    <br>
+    <br>
 
-	<h2>Login Form</h2>
-
+    <div class="text-center">
     <form action="index.php" method="post">
         <label for "nickname>Nickname: </label>
         <input type="text" placeholder="maxmustermann" name="nickname" required><br />
@@ -22,8 +27,9 @@
         <button class="login_button" name="login" type="submit">Login</button>
         <a href="register.php"><button type="button" class="register_btn">Register</button></a>
     </form>
-
-
+    </div>
+    
+</div>
 		
 		<?php
 			if(isset($_POST['login']))

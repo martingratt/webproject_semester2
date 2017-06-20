@@ -6,14 +6,26 @@ if (isset($_SESSION["name"])) {
     ?>
 
     <html>
-    <head>
+    <head><link rel="stylesheet" href="css/bootstrap.css">
         <title>Mein Bereich</title>
     </head>
+
+    <title>Mainpage</title>
+
     <body>
-    <h1>Hallo <?php echo $_SESSION["name"];?> </h1>
-    <a href="logout.php">Ausloggen</a>
-    <br></br>
-    <a href="RankedList.php">Rangliste</a>
+
+    <div class="container-fluid">
+        <div class="text-center"><h1>HANGMAN WARS</h1></div>
+
+        <div class="text-center">
+            <div class="row">
+                <div class="col-md-6"><h2><a href="RankedList.php">Rangliste</a></h2></div>
+                <div class="col-md-6"><h2><a href="logout.php">Ausloggen</a></h2></div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="col-md-3">Hallo <?php echo $_SESSION["name"];?></div> -->
     </body>
 
     </html>
