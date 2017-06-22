@@ -6,37 +6,65 @@
 
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" href="css/bootstrap.css">
-
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
 <title>Login Page</title>
 
 </head>
 <body>
 <div class="container-fluid">
-    <div class="text-center"><h1>HANGMAN WARS</h1></div>
-
-    <br>
-    <br>
-
-    <div class="text-center">
-    <form action="index.php" method="post">
-        <label for "nickname>Nickname: </label>
-        <input type="text" placeholder="maxmustermann" name="nickname" required><br />
-        <label for="password">Passwort: </label>
-        <input type="password" placeholder="passwort eingaben" name="password" required><br />
-        <button class="login_button" name="login" type="submit">Login</button>
-        <a href="register.php"><button type="button" class="register_btn">Register</button></a>
-    </form>
+    <div class="col-sm-offset-2 col-sm-10">
+        <h1>HANGMAN WARS</h1>
+        <br>
+        <br>
     </div>
-    
+
+
+
+
+
+    <div class="form-horizontal">
+        <form action="index.php" method="post">
+
+            <div class="form-group">
+
+                <label for="nickname" class="col-sm-2 control-label">Nickname: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="maxmustermann" name="nickname" required><br />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">Passwort: </label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control"  placeholder="passwort eingaben"  name="password" required><br />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default" name="login" type="submit">Einloggen</button>
+                <a href="register.php"><button type="button" class="btn btn-default">Registrieren</button></a>
+                    </div>
+            </div>
+
+
+        </form>
+    </div>
+
 </div>
-		
+
+
+
+<br>
+<br><br>
+
 		<?php
 			if(isset($_POST['login']))
 			{
 				$username=mysqli_escape_string($con, $_POST['nickname']); //für andere wiederhohlen
 				//$password=$_POST['password'];
-				$password = ($_POST['password']);
+				$password = mysqli_escape_string($con, ($_POST['password']));
 
 				$hash = hash('sha256', $password);
 

@@ -4,10 +4,10 @@
         $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
 
         //alles klein
-        $nickname = strtolower($_POST["nickname"]);
+        $nickname = mysqli_escape_string($con, strtolower($_POST["nickname"]));
         //verschlüsselung
-        $passwort = $_POST["passwort"];
-        $passwortwh = $_POST["passwortwh"];
+        $passwort = mysqli_escape_string($con, $_POST["passwort"]);
+        $passwortwh = mysqli_escape_string($con, $_POST["passwortwh"]);
 
         $hash = hash('sha256', $passwort);
 
@@ -19,47 +19,52 @@
                         echo "passwort ist leer";
                     } else {
 
-
-                        $control = 0;
-
-                        $sql = "SELECT nickname FROM user WHERE nickname = '$nickname'";
-
-                        $result = mysqli_query($tunnel, $sql) or die($ordiestring);
-
-                        while ($row = mysqli_fetch_object($result)) {
-                            $control++;
-
-                        }
-                        if ($control != 0) {
-                            $errorUserNameExists = true;
-                            echo "<p>Username <strong>$nickname</strong> existiert bereits! Versuchen sie einen andern... <a href='register.php'>zurück</a> </p>";
-
+                        if(!preg_match('/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/', $_POST['passwort']))
+                        {
+                            echo 'Das Passwort entspricht nicht den Sicherheitsbestimmungen!<br>
+                              Das Passwor muss aus folgenden Bestandteilen bestehen:<br>
+                              - mindestens 8 Buchstaben<br>
+                              - Groß und Kleinbuchstaben<br>
+                              - Zahlen<br>
+                              - Es sollte nach Möglichkeit auch mindestens ein Sonderzeichen enthalten!';
                         } else {
-                            echo "Speicherung in DB";
 
-                            $sql = "INSERT INTO user (nickname, password) VALUES ('" . $nickname . "', '" . $hash . "');";
+                            $control = 0;
 
-                            echo "<p><strong>PHP Info: </strong>" . $sql . "</p>";
+                            $sql = "SELECT nickname FROM user WHERE nickname = '$nickname'";
 
-                            $result = mysqli_query($tunnel, $sql);
+                            $result = mysqli_query($tunnel, $sql) or die($ordiestring);
 
-                            echo "<p>Ihr Benutzer wurde erfolgreich angelegt, melden Sie sich jetzt an <a href='index.php'>Anmelden</a> </p>";
+                            while ($row = mysqli_fetch_object($result)) {
+                                $control++;
+
+                            }
+                            if ($control != 0) {
+                                $errorUserNameExists = true;
+                                echo "<p>Username <strong>$nickname</strong> existiert bereits! Versuchen sie einen andern...</p>";
+
+                            } else {
 
 
+                                $sql = "INSERT INTO user (nickname, password) VALUES ('" . $nickname . "', '" . $hash . "');";
+
+
+                                $result = mysqli_query($tunnel, $sql);
+
+                                echo "<p>Ihr Benutzer wurde erfolgreich angelegt, melden Sie sich jetzt an <a href='index.php'>Anmelden</a> </p>";
+
+
+                            }
                         }
                     }
 
             } else {
 
-
                 echo "Achtung! Passwörter stimmen nicht überein";
-                echo "Passwort 1: " . $passwort . " Passwort 2: " . $passwortwh;
 
             }
 
             mysqli_close($tunnel);
-
-
 
 ?>
 

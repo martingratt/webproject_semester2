@@ -1,6 +1,7 @@
 
+CREATE DATABASE hangman;
 
-USE Hangman;
+USE hangman;
 
 
 CREATE TABLE Groups (
@@ -12,7 +13,7 @@ CREATE TABLE Groups (
 CREATE TABLE User (
 	userid INT NOT NULL AUTO_INCREMENT
     , nickname CHAR (80) NOT NULL
-    , entrydate DATE
+    , entrydate TIMESTAMP
     , password CHAR (80) NOT NULL
     , groupid INT
     , FOREIGN KEY (groupid) REFERENCES Groups(groupid)
@@ -48,11 +49,11 @@ INSERT INTO Groups (groupname)
 	, ('WING')
 	, ('MKM');
 
-INSERT INTO User (nickname, entrydate, password, groupid)
+INSERT INTO User (nickname, password, groupid)
 	VALUES
-    ('robinho', "2017-06-13", 'keine Ahnung', 1)
-    , ('marinho', "2016-05-16", 'password', 1)
-    , ('johinho', "2017-03-18", 'bambus', 2);
+    ('robinho',  'f0e4c2f76c58916ec258f246851bea091d14d4247a2fc3e18694461b1816e13b', 1) /*Passwort nach hash sha-256 (asdf) --> wurde mit generator umgewandelt und dient zu Testzwecken*/
+    , ('marinho', 'f0e4c2f76c58916ec258f246851bea091d14d4247a2fc3e18694461b1816e13b', 1)
+    , ('johinho', 'f0e4c2f76c58916ec258f246851bea091d14d4247a2fc3e18694461b1816e13b', 2);
     
 INSERT INTO Scores(userid, score)
 	VALUES 
@@ -79,6 +80,4 @@ INSERT INTO Words (wordname, difficultyid)
     , ('Bier', 2)
     , ('Frankreich', 3)
     , ('Donaudampfschiffahrt', 4);
-
-
 
