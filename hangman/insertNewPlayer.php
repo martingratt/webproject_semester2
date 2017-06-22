@@ -4,10 +4,10 @@
         $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
 
         //alles klein
-        $nickname = mysqli_escape_string($con, strtolower($_POST["nickname"]));
+        $nickname = mysqli_escape_string($tunnel, strtolower($_POST["nickname"]));
         //verschlüsselung
-        $passwort = mysqli_escape_string($con, $_POST["passwort"]);
-        $passwortwh = mysqli_escape_string($con, $_POST["passwortwh"]);
+        $passwort = mysqli_escape_string($tunnel, $_POST["passwort"]);
+        $passwortwh = mysqli_escape_string($tunnel, $_POST["passwortwh"]);
 
         $hash = hash('sha256', $passwort);
 
