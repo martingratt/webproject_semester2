@@ -6,7 +6,9 @@
 
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" href="css/bootstrap.css">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
 
 <title>Login Page</title>
 
@@ -28,7 +30,7 @@
         <a href="register.php"><button type="button" class="register_btn">Register</button></a>
     </form>
     </div>
-    
+
 </div>
 		
 		<?php

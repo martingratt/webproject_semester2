@@ -1,12 +1,31 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/navBar.css">
 </head>
+<body class="news">
+<header>
+    <div class="nav">
+        <ul>
+            <li class="home"><a href="hangman.php">Home</a></li>
+            <li class="rankedlist"><a class="active" href="RankedList.php">Rangliste</a></li>
+            <li class="news"><a href="news.php">News</a></li>
+            <li class="impressum"><a href="impressum.php">Impressum</a></li>
+            <li class="logout"><a href="logout.php">Logout</a></li>
+        </ul>
+    </div>
+</header>
+</body>
+
+
+
 <?php
 /**Einbinden von Datenbank via Datei db_newconnection.php **/
 
 include "db_newconnection.php";
 $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
+
+
 
 ?>
 

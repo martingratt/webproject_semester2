@@ -4,28 +4,26 @@ session_start();
 
 if (isset($_SESSION["name"])) {
     ?>
-
     <html>
-    <head><link rel="stylesheet" href="css/bootstrap.css">
-        <title>Mein Bereich</title>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/navBar.css">
+        <title>Hangmanwars</title>
     </head>
 
-    <title>Mainpage</title>
 
-    <body>
-
-    <div class="container-fluid">
-        <div class="text-center"><h1>HANGMAN WARS</h1></div>
-
-        <div class="text-center">
-            <div class="row">
-                <div class="col-md-6"><h2><a href="RankedList.php">Rangliste</a></h2></div>
-                <div class="col-md-6"><h2><a href="logout.php">Ausloggen</a></h2></div>
-            </div>
+    <body class="news">
+    <header>
+        <div class="nav">
+            <ul>
+                <li class="home"><a href="hangman.php">Home</a></li>
+                <li class="Rankedlist"><a class="active" href="RankedList.php">Rangliste</a></li>
+                <li class="news"><a href="news.php">News</a></li>
+                <li class="impressum"><a href="impressum.php">Impressum</a></li>
+                <li class="logout"><a href="logout.php">Logout</a></li>
+            </ul>
         </div>
-    </div>
-
-    <!--<div class="col-md-3">Hallo <?php echo $_SESSION["name"];?></div> -->
+    </header>
     </body>
 
     </html>
