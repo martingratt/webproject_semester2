@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6633b3df-4a8f-414d-a716-abe0f921c316" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hangman/RankedList.php" afterPath="$PROJECT_DIR$/hangman/RankedList.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hangman/hangman.php" afterPath="$PROJECT_DIR$/hangman/hangman.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hangman/index.php" afterPath="$PROJECT_DIR$/hangman/index.php" />
+=======
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
     </list>
     <ignored path="webproject_semester2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +41,17 @@
       <file leaf-file-name="RankedList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangman/RankedList.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="204">
               <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
               <folding>
                 <marker date="1498215430694" expanded="true" signature="809:1075" ph="SELECT p.nic... user" />
               </folding>
+=======
+            <state relative-caret-position="17">
+              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <folding />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
             </state>
           </provider>
         </entry>
@@ -50,9 +59,17 @@
       <file leaf-file-name="rankedList.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangman/css/rankedList.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+=======
+            <state relative-caret-position="510">
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding>
+                <marker date="1498162475356" expanded="true" signature="1154:1220" ph="select * fro... user" />
+              </folding>
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
             </state>
           </provider>
         </entry>
@@ -148,10 +165,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -168,7 +184,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,6 +267,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -375,19 +398,31 @@
       <workItem from="1497439758867" duration="3520000" />
       <workItem from="1497896530141" duration="2035000" />
       <workItem from="1497957119477" duration="8341000" />
+<<<<<<< HEAD
       <workItem from="1497976645684" duration="7240000" />
       <workItem from="1498208967726" duration="6583000" />
+=======
+      <workItem from="1497976645684" duration="6121000" />
+      <workItem from="1498162584608" duration="84000" />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="28307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="20689000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26200417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,6 +497,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hangman/RankedList.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
@@ -474,6 +510,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="90" lean-forward="true" selection-start-line="0" selection-start-column="90" selection-end-line="0" selection-end-column="90" />
+=======
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
           <folding />
         </state>
       </provider>
@@ -488,6 +528,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hangman/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="170">
           <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
@@ -502,7 +543,21 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1498215430694" expanded="true" signature="809:1075" ph="SELECT p.nic... user" />
+=======
+        <state relative-caret-position="510">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <marker date="1498162475356" expanded="true" signature="1154:1220" ph="select * fro... user" />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangman/RankedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -534,9 +589,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <marker date="1498215430694" expanded="true" signature="809:1075" ph="SELECT p.nic... user" />
           </folding>
+=======
+          <folding />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
         </state>
       </provider>
     </entry>
@@ -561,7 +620,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <marker date="1498211745252" expanded="true" signature="1156:1222" ph="select * fro... user" />
+=======
+            <marker date="1498162475356" expanded="true" signature="1154:1220" ph="select * fro... user" />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
           </folding>
         </state>
       </provider>
@@ -693,6 +756,7 @@
     <entry file="file://$PROJECT_DIR$/hangman/css/generalstyle.scss" />
     <entry file="file://$PROJECT_DIR$/hangman/css/indexStyle.scss" />
     <entry file="file://$PROJECT_DIR$/webprojekt/index.php">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
@@ -710,6 +774,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangman/css/generalstyle.css">
+=======
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
@@ -719,9 +785,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hangman/js/news.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
         </state>
       </provider>
     </entry>
@@ -751,6 +822,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/hangman/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -774,11 +846,20 @@
           <folding>
             <marker date="1498215430694" expanded="true" signature="809:1075" ph="SELECT p.nic... user" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/hangman/css/mainpage.css" />
+    <entry file="file://$PROJECT_DIR$/hangman/RankedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangman/css/rankedList.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -790,6 +871,13 @@
         <state relative-caret-position="374">
           <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding />
+=======
+        <state relative-caret-position="510">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <marker date="1498162475356" expanded="true" signature="1154:1220" ph="select * fro... user" />
+          </folding>
+>>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
         </state>
       </provider>
     </entry>
