@@ -26,3 +26,28 @@ h1 {
 .hit-the-floor {
     text-align: center;
 }
+
+.passwortcheck {
+    color: darkred;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    text-align: center;
+}
+
+.logout1 {
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    text-align: center;
+}
+
+.logout2 {
+    color: black;
+    font-size: 0.7em;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    text-align: center;
+
+}

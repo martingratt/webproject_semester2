@@ -7,55 +7,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/textstyle.css">
+    <script type="text/javascript" src="js/login.js"></script>
 
 <title>Login Page</title>
 
 </head>
 <body>
-<div class="container-fluid">
-    <div class="col-sm-offset-2 col-sm-10">
-        <h1>HANGMAN WARS</h1>
-        <br>
-        <br>
-    </div>
 
 
 
-
-
-    <div class="form-horizontal">
+<div class="login-page">
+    <div class="hit-the-floor"><h1>Hangman Wars!</h1></div>
+    <div class="form">
         <form action="index.php" method="post">
 
-            <div class="form-group">
-
-                <label for="nickname" class="col-sm-2 control-label">Nickname: </label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" placeholder="maxmustermann" name="nickname" required><br />
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="password" class="col-sm-2 control-label">Passwort: </label>
-                <div class="col-sm-3">
-                    <input type="password" class="form-control"  placeholder="passwort eingaben"  name="password" required><br />
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                <button class="btn btn-default" name="login" type="submit">Einloggen</button>
-                <a href="register.php"><button type="button" class="btn btn-default">Registrieren</button></a>
-                    </div>
-            </div>
-
-
+            <input type="text" placeholder="Nickname" name="nickname" required/>
+            <input type="password" placeholder="Passwort" name="password" required/>
+            <button class="btn btn-default" name="login" type="submit">Einloggen</button>
+            <p class="message">Noch nicht registriert? <a href="register.php">Werde jetzt Mitglied</a></p>
         </form>
     </div>
-
-
-</div>
-
 
 
 <br>

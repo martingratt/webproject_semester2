@@ -5,51 +5,38 @@
     <title>
         register
     </title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/textstyle.css">
+    <script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
 
-<div class="col-sm-offset-2 col-sm-10">
-    <h1>Registrierung</h1>
-    <br>
-    <br>
-</div>
+
+
 
 <form action="register.php" type="submit" method="post">
 
-    <div class="form-horizontal">
 
-        <div class="form-group">
-            <label for ="nickname" class="col-sm-2 control-label">Nickname</label>
-            <div class="col-sm-3">
-                <input type="text" name="nickname" class="form-control" placeholder="maxmustermann" required>
-            </div>
+
+
+    <div class="login-page">
+        <div class="hit-the-floor"><h1>Hangman Wars!</h1></div>
+        <div class="form">
+
+            <form class="register-form" action="register.php" type="submit" method="post"">
+                <input type="text" placeholder="Nickname" name="nickname" required/>
+                <input type="password" placeholder="Passwort" name="passwort" required/>
+                <input type="password" placeholder="Passwort wiederhohlen" name="passwortwh" required/>
+                <button value="Registrierern" name="submit">Registieren</button>
+                <p class="message">Schon registriert? <a href="index.php">Jetzt anmelden</a></p>
+            </form>
+
         </div>
-
-        <div class="form-group">
-            <label for ="nickname" class="col-sm-2 control-label">Passwort</label>
-            <div class="col-sm-3">
-                <input type="password" name="passwort" class="form-control" placeholder="Meinpassword1" required>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for ="nickname" class="col-sm-2 control-label">Passwort wiederhohlen</label>
-            <div class="col-sm-3">
-                <input type="password" name="passwortwh" class="form-control" placeholder="Meinpassword1" required>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <input type="submit" class="btn btn-default" value="Registrierern" name="submit"/>
-            </div>
-        </div>
-
     </div>
 
 
-    <div class="col-sm-offset-2 col-sm-10">
+
+    <div class="passwortcheck">
         <?php
         $errorUserNameExists = false;
 

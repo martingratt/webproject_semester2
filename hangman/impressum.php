@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["name"])) {
+?>
+
 <html>
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -38,3 +45,12 @@
 
 </body>
 </html>
+    <?php
+} else {
+    ?>
+
+
+    <?php
+    header( "Location: index.php");
+}
+?>
