@@ -9,6 +9,7 @@ if (isset($_SESSION["name"])) {
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/navBar.css">
         <link rel="stylesheet" href="css/HangmanWars.css">
+        <link rel="stylesheet" href="css/textstyle.css">
         <script type="text/javascript" src="GameCode/jquery.min.js"></script>
         <title>Hangmanwars</title>
         <meta charset="UTF-8">
@@ -28,22 +29,24 @@ if (isset($_SESSION["name"])) {
         </div>
     </header>
     <section>
+        <br>
+        <br>
+        <div class="hit-the-floor"><h1>Hangman Wars!</h1></div>
+
         <div id="container">
 
             <div id="header">
-                <p>Sie haben noch <span id="lives">4</span> Leben
+                <p> Sie haben noch <span id="lives">5</span> Leben
 
                     <br>
 
-                    Das Wort umfasst <span id="numLetters">0</span> Buchstaben
-                    <br>
-                    Ihr aktueller Score beträgt <span id="highscore">0</span>
+                    Das Wort umfasst <span id="numLetters">0</span> Buchstaben <br>
+                    Ihr aktueller Score beträgt <span id="highscore">100000</span>
                 </p>
 
                 <h1 id="WORD">___________</h1>
 
             </div>
-
 
 
 

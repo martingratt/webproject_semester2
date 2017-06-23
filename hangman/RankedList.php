@@ -2,6 +2,8 @@
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/rankedList.css">
+    <link rel="stylesheet" href="css/textstyle.css">
 </head>
 <body class="news">
 <header>
@@ -15,6 +17,13 @@
         </ul>
     </div>
 </header>
+<section>
+    <br>
+    <br>
+    <div class="hit-the-floor"><h1 class="text-center">Highscore:</h1></div>
+    <br>
+    <br>
+</section>
 </body>
 
 
@@ -51,12 +60,11 @@ if(!$result)
     echo mysqli_error($tunnel);
 }
 **/
-echo "<h1>HIGHSCORE LIST</h1>";
 //Ausgabe Name und Score
-echo "<table class='table table-bordered'>";
-echo "<td>","Th.","</td>";
-echo "<td>","NICKNAME","</td>";
-echo "<td>","SCORE","</td>";
+echo "<table class='table-bordered'>";
+echo "<td><strong>","Th.","</strong></td>";
+echo "<td><strong>","NICKNAME","</strong></td>";
+echo "<td><strong>","SCORE","</strong></td>";
 $highscorenumber=1;
 while($row2 = mysqli_fetch_object($result))
 {

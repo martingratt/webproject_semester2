@@ -8,11 +8,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
-<<<<<<< HEAD
 
-
-=======
->>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
 <title>Login Page</title>
 
 </head>
@@ -24,8 +20,6 @@
         <br>
     </div>
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -59,7 +53,7 @@
         </form>
     </div>
 
->>>>>>> c0755d8ec918fe1d385d987f8513545786ef0710
+
 </div>
 
 

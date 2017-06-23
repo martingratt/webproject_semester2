@@ -21,6 +21,10 @@
 
 
     <div class="text-center">
+        <br>
+        <br>
+        <br>
+        <br>
         <h1>Impressum</h1>
         <p><strong>Betreiber:</strong><br />Max Mustermann<br />Musterstraße 1<br />80999 München</p>
         <br>

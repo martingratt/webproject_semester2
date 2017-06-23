@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/textstyle.css">
 </head>
 <title>News</title>
 <body class="news">
@@ -19,7 +20,9 @@
 <section>
 
     <div class="text-center">
-        <h1>Breaking News</h1>
+        <br>
+        <br>
+        <div class="hit-the-floor"><h1>Breaking News</h1></div>
         <h2>Verhaftet wegen Sexy:</h2>
         <p>Es gibt viele Gründe kein Real Madrid Fan zu sein, einer der Gründe finden Sie unter diesem wunderschönen Textparagraphen!
         <br>

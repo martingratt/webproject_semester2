@@ -2,8 +2,10 @@ Main = {};
 Main.WordArray = [];
 Main.WordUArray = [];
 
-Main.Lives = 4;
+Main.Lives = 5;
 Main.NumInWordBank = Words.Length;
+
+Main.Highscore=100000;
 
 Main.Word = "test";
 Main.WordU = "";
@@ -49,9 +51,13 @@ Main.UpdateLetter = function(letter) {
         Main.Lives -= 1;
         document.getElementById("lives").innerHTML = Main.Lives;
 
+
     }
 
-
+    if(Main.Changes <1) {
+        Main.Highscore-=12357;
+        document.getElementById("highscore").innerHTML = Main.Highscore;
+    }
 
 
     Main.WordU = Main.WordUArray.join("");
@@ -70,6 +76,7 @@ Main.UpdateLetter = function(letter) {
 
     if(Main.Word1===Main.Word2){
         alert("Sie haben gewonnen!!");
+
         window.location.reload();
 
         console.log(6);
