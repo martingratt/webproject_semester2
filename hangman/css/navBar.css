@@ -23,7 +23,7 @@ body {
     text-decoration: none;
     color: #fff;
     display: block;
-    transition: 3s background-color;
+    transition: 1s background-color;
 }
 
 .nav a:hover {

@@ -70,7 +70,7 @@ if(!$result)
 }
 **/
 //Ausgabe Name und Score
-echo "<table class='table-bordered'>";
+echo "<table class='table-responsive'>";
 echo "<td><strong>","Th.","</strong></td>";
 echo "<td><strong>","NICKNAME","</strong></td>";
 echo "<td><strong>","SCORE","</strong></td>";

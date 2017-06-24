@@ -79,6 +79,7 @@ Main.UpdateLetter = function(letter) {
 
         window.location.reload();
 
+
         console.log(6);
 
     }
