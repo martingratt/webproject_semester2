@@ -45,6 +45,7 @@ $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
 
 
 
+
 ?>
 
 <?php
@@ -58,17 +59,44 @@ $rankedlist = "SELECT p.nickname AS nickname,
 
 $result = mysqli_query($tunnel,$rankedlist);
 
+
+
+
 /**
   Fehlerausgabe falls die Ausgabe nicht funktioniert!
- **/
 
 
-/**
+
 if(!$result)
 {
     echo mysqli_error($tunnel);
 }
-**/
+
+
+
+//Überprüfung ob Wert Übergeben wurde
+
+
+
+/*$uid = (isset($_POST['score'])) ? $_POST['score'] : 0;
+
+if($uid==0) {
+    echo 'Score not found';
+}
+*/
+
+If (isset($_POST['score']))
+{
+    $highscore = $_POST['score'];
+
+    $sql2= "INSERT INTO Scores (score,) VALUES ('$highscore')";
+    $sql2=mysqli_query($tunnel,$sql2);
+}
+
+
+
+
+
 //Ausgabe Name und Score
 echo "<table class='table-responsive'>";
 echo "<td><strong>","Th.","</strong></td>";

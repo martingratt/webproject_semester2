@@ -1,4 +1,4 @@
-<?php
+><?php
 
         include "db_newconnection.php";
         $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";

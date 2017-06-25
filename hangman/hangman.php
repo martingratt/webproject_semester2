@@ -28,7 +28,6 @@ if (isset($_SESSION["name"])) {
             </ul>
         </div>
     </header>
-    <section>
         <br>
         <br>
         <div class="hit-the-floor"><h1>Hangman Wars!</h1></div>
@@ -42,6 +41,7 @@ if (isset($_SESSION["name"])) {
 
                     Das Wort umfasst <span id="numLetters">0</span> Buchstaben <br>
                     Ihr aktueller Score beträgt <span id="highscore">100000</span>
+
                 </p>
 
                 <h1 id="WORD">___________</h1>
@@ -83,8 +83,15 @@ if (isset($_SESSION["name"])) {
             </div>
         </div>
 
+            <form>
+                <input type="hidden" id="hiddenscore" name="Highscore"/>
+            </form>
+
+
         <script type="text/javascript" src="GameCode/Wordbank.js"></script>
+
         <script type="text/javascript" src="GameCode/main.js"></script>
+
         <script type="text/javascript" src="GameCode/clickfunction.js"></script>
 
     </section>

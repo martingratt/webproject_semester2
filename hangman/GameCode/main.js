@@ -77,8 +77,24 @@ Main.UpdateLetter = function(letter) {
     if(Main.Word1===Main.Word2){
         alert("Sie haben gewonnen!!");
 
-        window.location.reload();
+        var score = Main.Highscore;
+        alert ("Gratulation Ihr Score Beträgt: " +score);
 
+
+        $.ajax({
+            type: "POST",
+            url: "RankedList.php",
+            data: {score : score},
+            success: function(data, textStatus, jqXHR)
+            {
+                alert("Sucess!")
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+
+       // window.location.reload();
 
         console.log(6);
 
