@@ -90,7 +90,6 @@ Main.UpdateLetter = function(letter) {
                 alert("Sucess!")
             },
             error: function(jqXHR, textStatus, errorThrown) {
-
             }
         });
 
