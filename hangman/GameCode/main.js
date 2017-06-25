@@ -87,13 +87,13 @@ Main.UpdateLetter = function(letter) {
             data: {score : score},
             success: function(data, textStatus, jqXHR)
             {
-                alert("Sucess!")
+                //alert("Sucess!")
             },
             error: function(jqXHR, textStatus, errorThrown) {
             }
         });
 
-       // window.location.reload();
+       window.location.reload();
 
         console.log(6);
 
