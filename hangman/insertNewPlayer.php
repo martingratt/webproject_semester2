@@ -1,6 +1,7 @@
 ><?php
 
         include "db_newconnection.php";
+
         $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
 
         //alles klein
@@ -18,7 +19,7 @@
                     if ($_POST["passwort"] == NULL){
                         echo "passwort ist leer";
                     } else {
-
+                        //Passwortüberprüfung mit Pattern
                         if(!preg_match('/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/', $_POST['passwort']))
                         {
                             echo 'Das Passwort entspricht nicht den Sicherheitsbestimmungen!<br>
@@ -28,7 +29,7 @@
                               - Zahlen<br>
                               - Es sollte nach Möglichkeit auch mindestens ein Sonderzeichen enthalten!';
                         } else {
-
+                            //schreib in die db
                             $control = 0;
 
                             $sql = "SELECT nickname FROM user WHERE nickname = '$nickname'";
@@ -64,7 +65,7 @@
 
             }
 
-            mysqli_close($tunnel);
+            mysqli_close($tunnel); //schliesen nachdem
 
 ?>
 

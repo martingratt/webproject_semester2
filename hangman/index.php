@@ -1,6 +1,7 @@
 <?php
 	session_start();
-    require_once('dbconfig/config.php'); //require lassen und umbauen!
+//    require_once('dbconfig/config.php');
+    require_once "db_newconnection.php";//require lassen und umbauen!
 
 ?>
 
@@ -37,26 +38,25 @@
 		<?php
 			if(isset($_POST['login']))
 			{
-				$username=mysqli_escape_string($con, $_POST['nickname']); //für andere wiederhohlen
+				$username=mysqli_escape_string($tunnel, $_POST['nickname']); //injectionsicherheit
 				//$password=$_POST['password'];
-				$password = mysqli_escape_string($con, ($_POST['password']));
+				$password = mysqli_escape_string($tunnel, ($_POST['password']));
 
-				$hash = hash('sha256', $password);
+				$hash = hash('sha256', $password); //verschlüsselung
 
 				$query = "select * from user where nickname='$username' and password='$hash' ";
 				//echo $query;
-				$query_run = mysqli_query($con,$query);
+				$query_run = mysqli_query($tunnel,$query);
 				//echo mysql_num_rows($query_run);
 				if($query_run)
 				{
-					if(mysqli_num_rows($query_run)>0)
+					if(mysqli_num_rows($query_run)>0) //wenn mehr als 0 einträge vorhanden sind
 					{
-					$row = mysqli_fetch_array($query_run,MYSQLI_ASSOC);
+
+					//$row = mysqli_fetch_array($query_run,MYSQLI_ASSOC); (glaube diese Zeile ist umsonst, kann keinen sinn erkennen, falls login probleme auftreten einfach einfügen)
 					
 					$_SESSION['name'] = $username;
-					//$_SESSION['password'] = $password; muss ich doch nicht an die session übergeben oder?
 
-					
 					header( "Location: hangman.php");
 
 					}
@@ -73,7 +73,7 @@
 			else
 			{
 			}
-			mysqli_close($con);
+			mysqli_close($tunnel);
 
 		?>
 
