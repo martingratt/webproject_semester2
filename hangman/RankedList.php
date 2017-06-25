@@ -85,12 +85,19 @@ if($uid==0) {
 }
 */
 
+
 If (isset($_POST['score']))
 {
     $highscore = $_POST['score'];
+    $userID ="SELECT userid FROM `user` ";
 
-    $sql2= "INSERT INTO Scores (score,) VALUES ('$highscore')";
+    $sql2= "INSERT INTO Scores (userid, score) VALUES ('" . $userID . "','" . $highscore . "')";
     $sql2=mysqli_query($tunnel,$sql2);
+    if(!$sql2)
+    {
+        echo mysqli_error($tunnel);
+    }
+
 }
 
 
@@ -115,6 +122,10 @@ echo "</table>";
 ?>
 </html>
 
+<?php
+
+mysqli_close($tunnel); //schliesen nachdem
+?>
 
 <?php
 } else {
@@ -125,3 +136,4 @@ echo "</table>";
     header( "Location: index.php");
 }
 ?>
+
