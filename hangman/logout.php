@@ -27,7 +27,7 @@ session_destroy();
 
         <div class="logout1">Du bist nun ausgeloggt.</div> <br>
 
-        <div class="logout2">Zurück zum <a href="login.php">Login</a> </div>
+        <div class="logout2">Zurück zum <a href="index.php">Login</a> </div>
 
     </div>
 

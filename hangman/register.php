@@ -26,7 +26,7 @@
         //werte prüfen - evtl. einfügen wenn alles passt
         //falls was nicht passt - error setzen
 
-        require_once('insertNewPlayer1.php');
+        require_once('insertNewPlayer.php');
     }
     ?>
 </div>
