@@ -9,10 +9,10 @@ $db1 = new Database();
 session_start();
 
 //alles klein
-$nickname = mysqli_escape_string($db1, strtolower($_POST["nickname"]));
+$nickname = mysqli_escape_string($db1->getConn(), strtolower($_POST["nickname"]));
 //verschlüsselung
-$passwort = mysqli_escape_string($db1, $_POST["passwort"]);
-$passwortwh = mysqli_escape_string($db1, $_POST["passwortwh"]);
+$passwort = mysqli_escape_string($db1->getConn(), $_POST["passwort"]);
+$passwortwh = mysqli_escape_string($db1->getConn(), $_POST["passwortwh"]);
 
 
 
@@ -35,7 +35,7 @@ if ($passwort == $passwortwh){
         if(!preg_match('/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/', $_POST['passwort']))
         {
             echo 'Das Passwort entspricht nicht den Sicherheitsbestimmungen!<br>
-                              Das Passwor muss aus folgenden Bestandteilen bestehen:<br>
+                              Das Passwort muss aus folgenden Bestandteilen bestehen:<br>
                               - mindestens 8 Buchstaben<br>
                               - Groß und Kleinbuchstaben<br>
                               - Zahlen<br>
@@ -46,11 +46,11 @@ if ($passwort == $passwortwh){
 
             $sql = "SELECT nickname FROM user WHERE nickname = '$nickname'";
 
-            $result = $db1->query($db1, $sql);
 
 
 
-            //$result = mysqli_query($db1, $sql) or die($ordiestring);
+
+            $result = $db1->query($sql);
 
             while ($row = mysqli_fetch_object($result)) {
                 $control++;
@@ -67,7 +67,7 @@ if ($passwort == $passwortwh){
 
                 $result = $db1->query($sql);
 
-                $result = mysqli_query($db1, $sql);
+                //$result = mysqli_query($db1->getConn(), $sql);
 
                 echo "<p>Ihr Benutzer wurde erfolgreich angelegt, melden Sie sich jetzt an <a href='index.php'>Anmelden</a> </p>";
 
@@ -82,7 +82,7 @@ if ($passwort == $passwortwh){
 
 }
 
-mysqli_close($db1); //schliesen nachdem
+mysqli_close($db1->getConn()); //schliesen nachdem
 
 ?>
 
