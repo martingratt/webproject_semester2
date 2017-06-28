@@ -1,7 +1,5 @@
 <?php
 
-
-
 require_once "classes/Database.php";
 
 /*$host = "127.0.0.1";
@@ -15,6 +13,9 @@ session_start();
 
 if(isset($_POST['login']))
 {
+
+
+
     $username = $db->escapeString(strtolower($_POST['nickname'])); //Injectionsicherheit
 
     $password = $db->escapeString($_POST['password']);

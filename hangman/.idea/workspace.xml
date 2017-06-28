@@ -69,8 +69,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="138" column="9" lean-forward="true" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="114" column="6" lean-forward="true" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
               <folding>
                 <marker date="1498580751553" expanded="true" signature="2070:2158" ph="SELECT `id`,... user" />
                 <marker date="1498580751553" expanded="true" signature="2798:2830" ph="SELECT * FRO... user" />
@@ -415,12 +415,12 @@
       <workItem from="1498405780948" duration="7000" />
       <workItem from="1498405802268" duration="1529000" />
       <workItem from="1498575926184" duration="9847000" />
-      <workItem from="1498594847639" duration="3339000" />
+      <workItem from="1498594847639" duration="3426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61040000" />
+    <option name="totallyTimeSpent" value="61127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -800,8 +800,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="138" column="9" lean-forward="true" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
+        <state relative-caret-position="204">
+          <caret line="114" column="6" lean-forward="true" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
           <folding>
             <marker date="1498580751553" expanded="true" signature="2070:2158" ph="SELECT `id`,... user" />
             <marker date="1498580751553" expanded="true" signature="2798:2830" ph="SELECT * FRO... user" />

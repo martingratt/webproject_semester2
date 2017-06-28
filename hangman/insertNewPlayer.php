@@ -1,7 +1,6 @@
 <?php
 
 require_once ("classes/Database.php");
-require_once ("classes/User.php");
 
 $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
 
