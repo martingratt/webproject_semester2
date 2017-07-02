@@ -6,16 +6,18 @@ if (isset($_SESSION["name"])) {
 ?>
 
 <html>
-
-<html>
+<!-- Verlinken der Css Dateien -->
 <head>
+    <!-- Einbinden von Css Sheet um Website Mobilde responsive zu Gestalten -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/rankedList.css">
     <link rel="stylesheet" href="css/textstyle.css">
 </head>
-<body class="news">
+<body>
 <header>
+    <!-- Navigation eingefügt und verlinked-->
     <div class="nav">
         <ul>
             <li class="home"><a href="hangman.php">Home</a></li>
@@ -27,16 +29,14 @@ if (isset($_SESSION["name"])) {
     </div>
 </header>
 <section>
+    <!-- Überschrift, Hit The floor = Überschriftsdesign-->
     <br>
     <br>
     <div class="hit-the-floor"><h1 class="text-center">Highscore:</h1></div>
     <br>
     <br>
-</section>
-</body>
 
-
-
+    <!-- Datenbankverbindung öffnen-->
 <?php
 /**Einbinden von Datenbank via Datei db_newconnection.php **/
 
@@ -47,7 +47,7 @@ $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
 
 
 ?>
-
+    <!--Abfragen des Highscores und dem dazugehörigen Username-->
 <?php
 $rankedlist = "SELECT p.nickname AS nickname,
                       s.score AS score
@@ -84,7 +84,14 @@ if($uid==0) {
     echo 'Score not found';
 }
 */
+?>
 
+
+
+    <!-- Auslesen des Highscores in der Javascript Awendung, userid auslesen, zusammen in die Scoretabelle eintragen -->
+
+    <script src="GameCode/jquery.min.js"></script>
+    <?php
 
 If (isset($_POST['score']))
 {
@@ -99,12 +106,13 @@ If (isset($_POST['score']))
     }
 
 }
+?>
 
 
-
-
+<?php
 
 //Ausgabe Name und Score
+
 echo "<table class='table-responsive'>";
 echo "<td><strong>","Th.","</strong></td>";
 echo "<td><strong>","NICKNAME","</strong></td>";
@@ -120,17 +128,22 @@ while($row2 = mysqli_fetch_object($result))
 }
 echo "</table>";
 ?>
+
+</section>
+</body>
 </html>
 
+    <!-- Datenbankverbindung schließen-->
 <?php
 
-mysqli_close($tunnel); //schliesen nachdem
+mysqli_close($tunnel);
 ?>
 
 <?php
 } else {
     ?>
 
+    <!-- falls session unterbrochen wird, zurück zum log in(index.php)-->
 
     <?php
     header( "Location: index.php");

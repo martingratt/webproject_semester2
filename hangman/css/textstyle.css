@@ -1,3 +1,4 @@
+/* Styles für die einzelnen verwendeten Elemente, die nicht von bootstrap übernommen wurden*/
 h1 {
     font-size: 80px;
 }
@@ -9,7 +10,7 @@ h1 {
     font-size: 12em;
     font-weight: bold;
     font-family: Helvetica;
-    text-shadow: 0 1px 0 #ccc
+    text-shadow: 0 1px 0 #ccc /* Die folgenden Zeilen sind für den Schatteneffekt der Überschrift verantwortlich!*/
     , 0 2px 0 #c9c9c9
     , 0 3px 0 #bbb
     , 0 4px 0 #b9b9b9

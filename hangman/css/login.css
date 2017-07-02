@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-
+/* Styles für die einzelnen verwendeten Elemente, die nicht von bootstrap übernommen wurden*/
 .login-page {
     width: 360px;
     padding: 8% 0 0;

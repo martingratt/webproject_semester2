@@ -4,8 +4,12 @@ session_start();
 
 if (isset($_SESSION["name"])) {
     ?>
+
     <html lang="en">
     <head>
+        <!-- Einbinden von Css Sheet um Website Mobilde responsive zu Gestalten -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Verlinken der Css Dateien -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/navBar.css">
         <link rel="stylesheet" href="css/HangmanWars.css">
@@ -16,7 +20,8 @@ if (isset($_SESSION["name"])) {
     </head>
 
 
-    <body class="news">
+    <body>
+    <!-- Navigation einbinden! -->
     <header>
         <div class="nav">
             <ul>
@@ -30,26 +35,27 @@ if (isset($_SESSION["name"])) {
     </header>
         <br>
         <br>
+        <!-- Überschrift, Hit the florr ist Stylesheet für Schriftzug-->
         <div class="hit-the-floor"><h1>Hangman Wars!</h1></div>
 
         <div id="container">
-
+            <!-- Lebensanzeige, Span ist ein Inline Element von HTML-->
             <div id="header">
                 <p> Sie haben noch <span id="lives">5</span> Leben
 
                     <br>
-
+                    <!-- Buchstabenanzahl des Wortes, und Highscore-->
                     Das Wort umfasst <span id="numLetters">0</span> Buchstaben <br>
                     Ihr aktueller Score beträgt <span id="highscore">100000</span>
 
                 </p>
-
+                <!--Anzeige der bereits richtig ausgewählten Buchstaben-->
                 <h1 id="WORD">___________</h1>
 
             </div>
 
 
-
+            <!-- Auswahl der Buchstaben, Anklickbar für die Auswahl-->
             <div id="letters">
 
                 <a id="a">A </a>
@@ -83,11 +89,8 @@ if (isset($_SESSION["name"])) {
             </div>
         </div>
 
-            <form>
-                <input type="hidden" id="hiddenscore" name="Highscore"/>
-            </form>
 
-
+        <!--Javascript Dateien verlinken, umd die Anwendung einzubinden-->
         <script type="text/javascript" src="GameCode/Wordbank.js"></script>
 
         <script type="text/javascript" src="GameCode/main.js"></script>
@@ -99,6 +102,7 @@ if (isset($_SESSION["name"])) {
 
     </html>
 
+    <!--Falls Session unterbrochen wird, zurück zum Log in (Index.php)-->
     <?php
 } else {
     ?>

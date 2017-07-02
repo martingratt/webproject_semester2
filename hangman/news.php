@@ -9,13 +9,17 @@ if (isset($_SESSION["name"])) {
 
 <html>
 <head>
+    <!-- Einbinden von Css Sheet um Website Mobilde responsive zu Gestalten -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Verlinken der Css Dateien -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/textstyle.css">
 </head>
 <title>News</title>
-<body class="news">
+<body>
 <header>
+    <!-- Navigation einfügen-->
     <div class="nav">
         <ul>
             <li class="home"><a href="hangman.php">Home</a></li>
@@ -27,24 +31,27 @@ if (isset($_SESSION["name"])) {
     </div>
 </header>
 <section>
-
+    <!-- Überschrift einbinden, hit the floor ist das SStylesheet für die Schriftart-->
     <div class="text-center">
         <br>
         <br>
         <div class="hit-the-floor"><h1>Breaking News</h1></div>
+        <!-- Text und zweite Überschrift-->
         <h2>Verhaftet wegen Sexy:</h2>
         <p>Es gibt viele Gründe kein Real Madrid Fan zu sein, einer der Gründe finden Sie unter diesem wunderschönen Textparagraphen!
         <br>
     Falls ihr euch Fragen solltet was die mit Hangman zu tun hat, es ist ganz einfach: Hausverstand schadet nie!</p>
     </div>
 </section>
-<aside>
+    <!-- Bild einfügen -->
+    <!-- Falls der Mauszeiger auf das Bild zeigt, Wahrer Ultra anzeigen-->
     <div class="text-center">
     <img title="Wahrer Ultra" alt="Wahrer Ultra" src="Images/MartinGatt.jpg" width="550" height="740"/>
     </div>
-</aside>
 </body>
 </html>
+
+<!--Falls die Session unterbrochen wird, zurück zum Log in(index.php)-->
 <?php
 } else {
     ?>

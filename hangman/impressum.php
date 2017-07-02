@@ -7,11 +7,15 @@ if (isset($_SESSION["name"])) {
 
 <html>
 <head>
+    <!-- Einbinden von Css Sheet um Website Mobilde responsive zu Gestalten -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Verlinken der Css Dateien -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/navBar.css">
 </head>
 <title>News</title>
-<body class="news">
+<body>
+    <!-- Navigation einfügen und verlinken -->
 <header>
     <div class="nav">
         <ul>
@@ -26,7 +30,7 @@ if (isset($_SESSION["name"])) {
 <section>
 
 
-
+    <!-- Impressumtext einfügen, Hier wurde mit Absicht eine normale Überschrift gewählt! -->
     <div class="text-center">
         <br>
         <br>
@@ -45,6 +49,7 @@ if (isset($_SESSION["name"])) {
 
 </body>
 </html>
+    <!-- Falls Session unterbrochen wird, zurück zum Log in (Index.php)-->
     <?php
 } else {
     ?>

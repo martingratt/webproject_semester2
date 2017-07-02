@@ -81,19 +81,19 @@ Main.UpdateLetter = function(letter) {
     if(Main.Word1===Main.Word2){
         alert("Sie haben gewonnen!!");
 
-        var score = Main.Highscore;
-        alert ("Gratulation Ihr Score Beträgt: " +score);
+        var score = Main.Highscore;                                // Highscore in Variable speichern, sobald Spiel gewonnen wurde
+        alert ("Gratulation Ihr Score Beträgt: " +score);           // Score im Browser ausgeben
 
 
-        $.ajax({
-            type: "POST",
+        $.ajax({                                                    //Ajax, um der PHP Datei den Highscore zu übergeben, damit dieser in die Datenbank geschrieben werden kann
             url: "RankedList.php",
-            data: {score : score},
-            success: function(data, textStatus, jqXHR)
+            method: "post",
+            data: score,
+            success: function(data)
             {
                 //alert("Sucess!")
             },
-            error: function(jqXHR, textStatus, errorThrown) {
+            error: function() {
             }
         });
 
