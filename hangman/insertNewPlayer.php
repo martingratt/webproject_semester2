@@ -4,7 +4,7 @@ require_once ("classes/Database.php");
 
 $ordiestring = "<p><strong>PHP Info: </strong>Abfrage war nicht möglich.</p>";
 
-$db1 = new Database();
+$db1 = new Database(); //instanzierung
 
 $nickname = $db1->escapeString(strtolower($_POST['nickname'])); //injectionsicherheit + kleinschreibung
 
@@ -31,9 +31,9 @@ if ($passwort == $passwortwh){
             $control = 0;
 
             $sql = "SELECT nickname FROM user WHERE nickname = '$nickname'";
-
+            //methodenaufruf
             $result = $db1->query($sql);
-
+            // Fetch Object liefert eine Ergebniszeile als Objekt zurück
             while ($db1->fetchObject($result)) {
                 $control++;
 

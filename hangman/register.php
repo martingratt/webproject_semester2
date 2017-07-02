@@ -22,9 +22,7 @@
     $errorUserNameExists = false;
 
     if (isset($_POST["submit"])){
-
-        //werte prüfen - evtl. einfügen wenn alles passt
-        //falls was nicht passt - error setzen
+            //wenn alle werte nicht null sind
 
         require_once('insertNewPlayer.php');
     }

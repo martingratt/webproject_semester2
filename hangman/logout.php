@@ -2,7 +2,7 @@
 
 session_start();
 session_destroy();
-//username wird gelöscht
+//name wird aus session gelöscht
 
 
 ?>

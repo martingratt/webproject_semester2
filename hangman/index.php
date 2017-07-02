@@ -22,14 +22,17 @@ if(isset($_POST['login']))
 
     $hash = hash('sha256', $password); //verschlüsselung
 
+    //überprüfen ob der username mit dem passwort existiert
+
     $query = "select * from user where nickname='$username' and password='$hash' ";
 
+    //übergabe in methode query
     $query_run = $db->query($query);
-
+    //wenn die query richtig läuft /ergebnis liefert
     if($query_run)
     {
 
-        if($db->numRows($query_run)>0) //wenn mehr als 0 einträge vorhanden sind
+        if($db->numRows($query_run)>0) //wenn mehr als 0 einträge vorhanden sind (also ein eintrag für den Benuter)
         {
             $_SESSION['name'] = $username;
             header( "Location: hangman.php");
