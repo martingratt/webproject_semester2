@@ -1,18 +1,18 @@
-Main = {};
-Main.WordArray = [];
+Main = {};   //Objekterzeugung
+Main.WordArray = [];    //Es werden zwei Arrays erstellt
 Main.WordUArray = [];
 
 Main.Lives = 5;
 Main.NumInWordBank = Words.Length;
 
-Main.Highscore=100000;
+Main.Highscore=100000; // Fixer Startwert für den Highscore
 
 Main.Word = "test";
 Main.WordU = "";
 
 Main.PullWord = function(){
 
-    Main.Word = Words.List[(Math.floor(Math.random()*Main.NumInWordBank))];
+    Main.Word = Words.List[(Math.floor(Math.random()*Main.NumInWordBank))];  // Gibt eine Zufallszahl zwischen min z.B. 0 (inklusive) und max z.B. 1 (exklusive) zurück
 };
 
 Main.SetUnderline = function (){
@@ -20,13 +20,15 @@ Main.SetUnderline = function (){
 
     for(i=0; i<Main.Word.length; i++){
 
-        Main.WordArray[i] = Main.Word.charAt(i);
+        Main.WordArray[i] = Main.Word.charAt(i);   //Ein String, der das Zeichen an der angegebenen index-Stelle wiedergibt.
         Main.WordUArray[i] = "_";
     }
     Main.WordU = Main.WordUArray.join("");
-    document.getElementById("WORD").innerHTML = Main.WordU;
-    document.getElementById("numLetters").innerHTML = Main.Word.length;
+    document.getElementById("WORD").innerHTML = Main.WordU;             // Wertezuweisung, WORD aus der Index erhält die Werte aus Main.WordU
+    document.getElementById("numLetters").innerHTML = Main.Word.length;     //Wertezuweisung, numLetters aus der index bekommt die Werte aus Main.Word.length übergeben
 };
+
+//Die Methode Document.getElementById() greift auf ein HTML-Element zu, das ein eindeutiges id-Attribut besitzt
 
 Main.UpdateLetter = function(letter) {
 
@@ -38,7 +40,7 @@ Main.UpdateLetter = function(letter) {
     for (var i = 0; i < Main.Word.length; i++) {
         Main.WordArray[i] = Main.Word.charAt(i);
 
-        if (Main.Word.charAt(i) == letter) {
+        if (Main.Word.charAt(i) == letter) {        // Bedingungen werden definiert, wenn diese zutreffen, erhöht sich die (oben) deklarierte Variable Main.Changes um 1
             Main.WordUArray[i] = letter;
             Main.Changes += 1;
 
@@ -47,14 +49,14 @@ Main.UpdateLetter = function(letter) {
 
 
 
-    if (Main.Changes < 1) {
+    if (Main.Changes < 1) {                 // Bedingung für den Verlust eines Lebens
         Main.Lives -= 1;
         document.getElementById("lives").innerHTML = Main.Lives;
 
 
     }
 
-    if(Main.Changes <1) {
+    if(Main.Changes <1) {               // Bedingung für die Abnahme des Highscore
         Main.Highscore-=12357;
         document.getElementById("highscore").innerHTML = Main.Highscore;
     }
@@ -73,6 +75,8 @@ Main.UpdateLetter = function(letter) {
 
 
 
+                                                                // Wenn das eingebene Wort bzw die eingebenen Buchstaben aus dem dem Array Main.Word
+                                                                // mit dem Wort bzw den Buchstaben aus dem Array WordU übereinstimmen tritt jene Anweisung in Kraft
 
     if(Main.Word1===Main.Word2){
         alert("Sie haben gewonnen!!");
@@ -98,6 +102,7 @@ Main.UpdateLetter = function(letter) {
         console.log(6);
 
     }
+                                                                                // wenn die Anzahl der Leben unter 1, spricht 0 beträgt, dann ist das Spiel beendet und man hat verloren
 
     if (Main.Lives<1) {
         document.getElementById ("WORD").innerHTML==Main.Word;

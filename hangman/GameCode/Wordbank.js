@@ -1,8 +1,8 @@
 /**
  * Created by Admin on 15.06.2017.
  */
-Words = {};
-Words.List =[];
+Words = {};             //Objekt Words wird erstellt
+Words.List =[];         // Array wird erstellt
 
 Words.List[0] = "";
 Words.List[1] = "";
@@ -15,7 +15,7 @@ Words.List[7] = "";
 Words.List[8] = "";
 Words.List[9] = "";
 
-Words.List[0] = "juventus";
+Words.List[0] = "juventus";             // Zuweisung von Werten für die jeweilige Indexstelle des Array Words.List
 Words.List[1] = "milan";
 Words.List[2] = "inter";
 Words.List[3] = "roma";

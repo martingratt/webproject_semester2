@@ -1,5 +1,5 @@
-
-$(function () {
+                                            // ajax event welches es ermöglicht, dass ein Wert übergeben wird, sobald ein Button mit einer bestimmten
+$(function () {                             // id geklickt wird
     $("#a").click(function (event) {
         event.preventDefault();
         Main.UpdateLetter("a");
