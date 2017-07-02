@@ -60,6 +60,8 @@ else
 
 <head>
 
+    <!-- Viewport für Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no">
     <link rel="stylesheet" href="css/login.css">
 
     <link rel="stylesheet" href="css/textstyle.css">

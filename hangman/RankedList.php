@@ -5,11 +5,11 @@ session_start();
 if (isset($_SESSION["name"])) {
 ?>
 
-<html>
+
 <!-- Verlinken der Css Dateien -->
 <head>
-    <!-- Einbinden von Css Sheet um Website Mobilde responsive zu Gestalten -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Viewport für Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/rankedList.css">
@@ -129,7 +129,14 @@ while($row2 = mysqli_fetch_object($result))
 echo "</table>";
 ?>
 
+    <!-- Delete-Button, um alle Scores unter 5000 Punkten zu löschen -->
 </section>
+<div class="text-center">
+<form action="delete.php" method="post" name="<?php echo $deltescore['delete']; ?>">
+    <input type="hidden" name="delete" value="<?php echo $deltescore['delete']; ?>"/>
+    <input type="submit" name="submit1" value="Delete all Scores under 5000!">
+</form>
+</div>
 </body>
 </html>
 

@@ -7,9 +7,9 @@ if (isset($_SESSION["name"])) {
 
     <html lang="en">
     <head>
-        <!-- Einbinden von Css Sheet um Website Mobilde responsive zu Gestalten -->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <!-- Verlinken der Css Dateien -->
+        <!-- Viewport für Mobile Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no">
+        <!-- Verlinken der Stylesheets -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/navBar.css">
         <link rel="stylesheet" href="css/HangmanWars.css">

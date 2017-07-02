@@ -12,8 +12,9 @@ session_destroy();
     <title>
         logout
     </title>
-    <!-- Einbinden von Css Sheet um Website Mobilde responsive zu Gestalten -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Viewport für Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no">
     <!-- Verlinken der Css Dateien -->
     <link rel="stylesheet" href="css/textstyle.css">
     <link rel="stylesheet" href="css/login.css">

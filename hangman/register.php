@@ -5,6 +5,8 @@
     <title>
         register
     </title>
+    <!-- Viewport für Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/textstyle.css">
     <script type="text/javascript" src="js/login.js"></script>
@@ -12,7 +14,7 @@
 <body>
 
 
-
+<br>
 <div class="hit-the-floor"><h1>Hangman Wars!</h1></div>
 
 
