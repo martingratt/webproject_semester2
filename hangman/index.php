@@ -33,7 +33,7 @@ if(isset($_POST['login']))
     {
 
         if($db->numRows($query_run)>0) //wenn mehr als 0 einträge vorhanden sind (also ein eintrag für den Benuter)
-        {
+        {//mysql_num_rows — Liefert die Anzahl der Zeilen im Ergebnis
             $_SESSION['name'] = $username;
             header( "Location: hangman.php");
         }
